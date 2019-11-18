@@ -14,7 +14,7 @@ fn main() {
             .route("/", web::get().to(index))
             .route("/again", web::get().to(index2))
     })
-    .bind("127.0.0.1:80")
+    .bind("127.0.0.1:8080")
     .unwrap()
     .run()
     .unwrap();
